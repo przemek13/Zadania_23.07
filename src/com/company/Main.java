@@ -141,7 +141,7 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        String imie = "";
+        String imie = " ";
 
         Set<String> imiona = new TreeSet<String>();
 
