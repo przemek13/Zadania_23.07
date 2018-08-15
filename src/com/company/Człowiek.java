@@ -2,8 +2,8 @@ package com.company;
 
 public class Człowiek {
 
-    String imię;
-    String nazwisko;
+    private String imię;
+    private String nazwisko;
     Zwierzę zwierzę;
     DaneAdresowe daneAdresowe;
 
@@ -17,7 +17,23 @@ public class Człowiek {
     }
 
     public void print (String imię, String nazwisko, String info) {
-        System.out.println("Cześć nazwyam się " + imię + " " +nazwisko + ". " + info);
+        System.out.println("Cześć nazwyam się " + imię + " " + nazwisko + ". " + info);
+    }
+
+    public String getImię() {
+        return imię;
+    }
+
+    public void setImię(String imię) {
+        this.imię = imię;
+    }
+
+    public String getNazwisko() {
+        return nazwisko;
+    }
+
+    public void setNazwisko(String nazwisko) {
+        this.nazwisko = nazwisko;
     }
 
 }

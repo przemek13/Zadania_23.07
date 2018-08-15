@@ -7,8 +7,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-        /*
-
         //KLASY I DZIEDZICZENIE
 
         //Zadanie1
@@ -115,7 +113,7 @@ public class Main {
         System.out.println(listaKsiążek.size());
 
         for (Książka wypisz : listaKsiążek) {
-            if (wypisz.liczbaStron >= 200) {
+            if (wypisz.getLiczbaStron() >= 200) {
                 System.out.println(wypisz);
             }
         }
@@ -132,10 +130,12 @@ public class Main {
 
         System.out.println(listaKsiążek.size());
 
+        System.out.println();
+
         for (Książka wypisz : listaKsiążek) {
             System.out.println(wypisz);
 
-        } */
+        }
 
         //Zadanie 10
 
@@ -143,7 +143,7 @@ public class Main {
 
         String imie = " ";
 
-        Set<String> imiona = new TreeSet<String>();
+        List<String> imiona = new ArrayList<String>();
 
         while (true) {
 
@@ -151,11 +151,13 @@ public class Main {
 
             imie = sc.nextLine();
 
+            if(imiona.contains(imie)) {
+                System.out.println("Te imię jest już na liście");
+            }
+
             if (!imie.equals("END")) {
 
                 imiona.add(imie);
-
-                continue;
 
             }
 
@@ -163,8 +165,54 @@ public class Main {
                 break;
 
         }
-            System.out.println(imiona);
+
+        System.out.println("Ilość wpisanych imion: " + imiona.size());
+        System.out.println(imiona);
+
+        System.out.println();
+
+        // Zadanie 11
+
+        Scanner input = new Scanner(System.in);
+
+        String word = " ";
+
+        String reversedWord = " ";
+
+        Set <String> words = new TreeSet<String>();
+        Set<String> reversedWords = new TreeSet<String>();
+
+        while (true) {
+
+            System.out.println("Please, write unique palindromes only: ");
+
+            StringBuilder input2 = new StringBuilder();
+            word = input.next();
+            input2.append(word);
+            reversedWord = new String(input2.reverse());
+
+            if (!word.equals("END")) {
+
+                if (!word.equals(reversedWord)) {
+                    System.out.println("Sorry, this word is not a palindrome.");
+                }
+
+                else if(!words.contains(word)) {
+
+                    words.add(word);
+                    reversedWords.add(reversedWord);
+                }
+
+                else {
+                    System.out.println("Sorry, the words can not repeat themselves.");
+                }
+
+            } else
+                break;
 
         }
 
+        System.out.println("The palindromes you've enterd are: " + words);
+
+    }
 }

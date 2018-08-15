@@ -2,10 +2,10 @@ package com.company;
 
 public class Zwierzę {
 
-    String imię;
-    int wiek;
+    private String imię;
+    private Integer wiek;
 
-    public Zwierzę (String imię, int wiek) {
+    public Zwierzę (String imię, Integer wiek) {
         this.imię = imię;
         this.wiek = wiek;
     }
@@ -19,4 +19,19 @@ public class Zwierzę {
         return "Zwierz nazywa się: " + imię + " ,a jego wiek w latach to: " + wiek;
     }
 
+    public String getImię() {
+        return imię;
+    }
+
+    public void setImię(String imię) {
+        this.imię = imię;
+    }
+
+    public Integer getWiek() {
+        return wiek;
+    }
+
+    public void setWiek(Integer wiek) {
+        this.wiek = wiek;
+    }
 }

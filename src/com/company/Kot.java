@@ -4,7 +4,7 @@ public class Kot extends Zwierzę {
 
     RasaKota rasaKota;
 
-    public Kot(String imię, int wiek) {
+    public Kot(String imię, Integer wiek) {
         super(imię, wiek);
     }
 

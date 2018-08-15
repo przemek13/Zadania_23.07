@@ -4,7 +4,7 @@ public class Pies extends Zwierzę {
 
     RasaPsa rasaPsa;
 
-    public Pies(String imię, int wiek) {
+    public Pies(String imię, Integer wiek) {
         super(imię, wiek);
     }
 
@@ -12,6 +12,8 @@ public class Pies extends Zwierzę {
     public void print () {
         System.out.println("Jestem Pies");
     }
+
+
 
 
 }
