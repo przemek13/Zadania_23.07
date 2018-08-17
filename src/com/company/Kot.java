@@ -1,6 +1,7 @@
 package com.company;
 
 public class Kot extends Zwierzę {
+    //TODO pola w klasie powinny być private
 
     RasaKota rasaKota;
 

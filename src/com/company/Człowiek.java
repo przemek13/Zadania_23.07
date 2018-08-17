@@ -4,6 +4,7 @@ public class Człowiek {
 
     private String imię;
     private String nazwisko;
+    //TODO czemu zwierzę i daneAdresowe nie są private ?
     Zwierzę zwierzę;
     DaneAdresowe daneAdresowe;
 

@@ -151,9 +151,11 @@ public class Main {
 
             imie = sc.nextLine();
 
+            //TODO tutaj masz błąd. Gdy dodam 2 raz to samo imie to zostanie dodane i tak do listy.
             if(imiona.contains(imie)) {
                 System.out.println("Te imię jest już na liście");
             }
+            //TODO tutaj powinieneś dodać else if oraz else łącząc sprawdzenie czy to END a jak nie to dodaj do tablicy
 
             if (!imie.equals("END")) {
 
