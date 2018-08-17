@@ -1,9 +1,9 @@
 package com.company;
 
 public class Pies extends Zwierzę {
-    //TODO pola w klasie powinny być private
+    //TODO pola w klasie powinny być private-DONE
 
-    RasaPsa rasaPsa;
+    private RasaPsa rasaPsa;
 
     public Pies(String imię, Integer wiek) {
         super(imię, wiek);

@@ -14,13 +14,6 @@ public class Zwierzę {
         System.out.println("Jestem Zwierzę");
     }
 
-    //TODO metoda toString powinna być na końcu klasy
-
-    @Override
-    public String toString() {
-        return "Zwierz nazywa się: " + imię + " ,a jego wiek w latach to: " + wiek;
-    }
-
     public String getImię() {
         return imię;
     }
@@ -36,4 +29,12 @@ public class Zwierzę {
     public void setWiek(Integer wiek) {
         this.wiek = wiek;
     }
+
+    //TODO metoda toString powinna być na końcu klasy-DONE
+
+    @Override
+    public String toString() {
+        return "Zwierz nazywa się: " + imię + " ,a jego wiek w latach to: " + wiek;
+    }
+
 }

@@ -31,8 +31,8 @@ public class Main {
         Człowiek człowiek1 = new Człowiek("Zenek", "Nowak");
         Człowiek człowiek2 = new Człowiek("Edek", "Kowalski");
 
-        człowiek1.zwierzę = pies;
-        człowiek2.zwierzę = kot;
+        człowiek1.setZwierzę(pies);
+        człowiek2.setZwierzę(kot);
 
         //Zadanie 5
 
@@ -151,22 +151,19 @@ public class Main {
 
             imie = sc.nextLine();
 
-            //TODO tutaj masz błąd. Gdy dodam 2 raz to samo imie to zostanie dodane i tak do listy.
+            //TODO tutaj masz błąd. Gdy dodam 2 raz to samo imie to zostanie dodane i tak do listy.-DONE
+
             if(imiona.contains(imie)) {
                 System.out.println("Te imię jest już na liście");
             }
-            //TODO tutaj powinieneś dodać else if oraz else łącząc sprawdzenie czy to END a jak nie to dodaj do tablicy
-
-            if (!imie.equals("END")) {
-
+            else if (!imie.equals("END")) {
                 imiona.add(imie);
-
             }
-
             else
                 break;
-
         }
+
+            //TODO tutaj powinieneś dodać else if oraz else łącząc sprawdzenie czy to END a jak nie to dodaj do tablicy-DONE
 
         System.out.println("Ilość wpisanych imion: " + imiona.size());
         System.out.println(imiona);

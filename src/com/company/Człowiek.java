@@ -4,9 +4,9 @@ public class Człowiek {
 
     private String imię;
     private String nazwisko;
-    //TODO czemu zwierzę i daneAdresowe nie są private ?
-    Zwierzę zwierzę;
-    DaneAdresowe daneAdresowe;
+    //TODO czemu zwierzę i daneAdresowe nie są private ?-DONE
+    private Zwierzę zwierzę;
+    private DaneAdresowe daneAdresowe;
 
     public Człowiek (String imię, String nazwisko) {
         this.imię = imię;
@@ -37,4 +37,13 @@ public class Człowiek {
         this.nazwisko = nazwisko;
     }
 
+    public void setZwierzę(Zwierzę zwierzę) {
+        this.zwierzę = zwierzę;
+    }
+
+    public Zwierzę getZwierzę() {
+        return zwierzę;
+
+
+    }
 }
